@@ -467,10 +467,10 @@
   }
 
   .boxes {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      display: flex;
       gap: 20px;
       flex-wrap: wrap;
+      justify-content: center;
   }
 
   .box {
@@ -490,30 +490,8 @@
       border-color: #39a9db;
   }
 
-  /* Reponsive */
-
-  @media (max-width:746px) {
-      .boxes {
-          grid-template-columns: repeat(2, 1fr);
-      }
-  }
-
-  @media (max-width:480px) {
-      body {
-          overflow: visible;
-      }
-
-      .boxes {
-          grid-template-columns: repeat(1, 1fr);
-      }
-
-      .container {
-          height: 136vh;
-      }
-  }
-
-  @media (max-width:320px) {
-      h1 {
-          font-size: 2rem;
-      }
+  .box a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.1rem;
   }
