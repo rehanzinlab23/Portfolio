@@ -1,133 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <title>Portfolio&trade;</title>
-    <style>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <title>Portfolio&trade;</title>
+  <style>
+    .boxes {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        overflow: hidden;
+      }
+
+      .container {
+        height: 98vh;
+      }
+
       .boxes {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
       }
+    }
+  </style>
+</head>
 
-      @media (max-width: 480px) {
-        body {
-          overflow: visible;
-        }
+<body>
+  <div class="stars">
+    <!-- 50 shooting stars -->
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+  </div>
 
-        .boxes {
-          grid-template-columns: repeat(1, 1fr);
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="stars">
-      <!-- 50 shooting stars -->
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
-      <div class="shooting-star"></div>
+  <div class="container">
+    <h1>Welcome to My Portfolio</h1>
+    <div class="boxes">
+      <!-- Educators -->
+
+      <a style="text-decoration: none; color: #fff; font-size: 1.1rem" class="box" href="https://www.educators.edu.pk/"
+        target="_blank"><img style="position: relative; bottom: -2px" height="20px" width="20px"
+          src="images/favicon-educators.png" alt="" />
+        <span style="position: relative; left: 6px; bottom: 3px">Educators Original</span>
+        <div style="display: none" class="box"></div>
+      </a>
+
+      <!-- Educators Clone -->
+
+      <a style="text-decoration: none; color: #fff; font-size: 1.1rem" class="box"
+        href="https://the-educators-clone.netlify.app/" target="_blank"><img style="position: relative; bottom: -2px"
+          height="20px" width="20px" src="images/favicon-educators.png" alt="" />
+        <span style="position: relative; left: 6px; bottom: 3px">Educators Clone</span>
+        <div style="display: none" class="box"></div>
+      </a>
     </div>
+  </div>
+</body>
 
-    <div class="container">
-      <h1>Welcome to My Portfolio</h1>
-      <div class="boxes">
-        <!-- Educators -->
-
-        <a
-          style="text-decoration: none; color: #fff; font-size: 1.1rem"
-          class="box"
-          href="https://www.educators.edu.pk/"
-          target="_blank"
-          ><img
-            style="position: relative; bottom: -2px"
-            height="20px"
-            width="20px"
-            src="images/favicon-educators.png"
-            alt=""
-          />
-          <span style="position: relative; left: 6px; bottom: 3px"
-            >Educators Original</span
-          >
-          <div style="display: none" class="box"></div>
-        </a>
-
-        <!-- Educators Clone -->
-
-        <a
-          style="text-decoration: none; color: #fff; font-size: 1.1rem"
-          class="box"
-          href="https://the-educators-clone.netlify.app/"
-          target="_blank"
-          ><img
-            style="position: relative; bottom: -2px"
-            height="20px"
-            width="20px"
-            src="images/favicon-educators.png"
-            alt=""
-          />
-          <span style="position: relative; left: 6px; bottom: 3px"
-            >Educators Clone</span
-          >
-          <div style="display: none" class="box"></div>
-        </a>
-      </div>
-    </div>
-  </body>
 </html>
