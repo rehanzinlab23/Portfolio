@@ -493,8 +493,17 @@
   /* Reponsive */
 
   @media (max-width:746px) {
+
+      body {
+          overflow: visible;
+      }
+
       .boxes {
           grid-template-columns: repeat(2, 1fr);
+      }
+
+      .container {
+          height: 112vh;
       }
   }
 
@@ -508,7 +517,7 @@
       }
 
       .container {
-          height: 182vh;
+          height: 210vh;
       }
   }
 
