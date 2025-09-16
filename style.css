@@ -2,6 +2,7 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      scroll-behavior: smooth;
   }
 
   body {
@@ -503,7 +504,7 @@
       }
 
       .container {
-          height: 112vh;
+          height: 138vh;
       }
   }
 
@@ -517,7 +518,7 @@
       }
 
       .container {
-          height: 230vh;
+          height: 242vh;
       }
   }
 
