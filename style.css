@@ -35,6 +35,14 @@ body {
 
 h1 {
     font-size: 3rem;
+    background: -webkit-linear-gradient(#801357 12%,
+            #b8235a 30%,
+            #801357,
+            #3d1635,
+            #1c1a27);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 30px;
 }
 
