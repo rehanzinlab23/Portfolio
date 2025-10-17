@@ -11,7 +11,7 @@ body {
     background-image: url(images/bg.jpg);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     font-family: "Segoe UI", sans-serif;
     color: #e0e0ff;
     position: relative;
