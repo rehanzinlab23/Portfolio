@@ -8,10 +8,7 @@
 
 body {
     height: 100vh;
-    background-image: url(images/bg.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: repeat;
+    background-color: #8a2be2;
     font-family: "Segoe UI", sans-serif;
     color: #e0e0ff;
     position: relative;
@@ -31,7 +28,7 @@ body {
 h1 {
     font-size: 3rem;
     margin-bottom: 30px;
-    background: linear-gradient(90deg, #ff00cc, #3333ff);
+    background: linear-gradient(90deg, #ff00cc, #000);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
