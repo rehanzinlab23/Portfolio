@@ -3,15 +3,64 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 body {
-    height: 100vh;
-    background-color: #8a2be2;
+    background-color: #0d001a;
+    min-height: 100vh;
     font-family: "Segoe UI", sans-serif;
-    color: #e0e0ff;
+    color: #f0f8ff;
     position: relative;
+    background-image: radial-gradient(circle at center, #2e004c 0%, #0d001a 70%);
+}
+
+body::before,
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.6;
+    z-index: 1;
+}
+
+body::before {
+    top: 10%;
+    left: 10%;
+    background-color: #ff00cc;
+    animation: moveGlow1 15s infinite alternate ease-in-out;
+}
+
+body::after {
+    bottom: 5%;
+    right: 5%;
+    background-color: #00ccff;
+    animation: moveGlow2 18s infinite alternate ease-in-out;
+}
+
+@keyframes moveGlow1 {
+    from {
+        transform: translate(0, 0) scale(1.0);
+    }
+
+    to {
+        transform: translate(100px, 50px) scale(1.2);
+    }
+}
+
+@keyframes moveGlow2 {
+    from {
+        transform: translate(0, 0) scale(1.1);
+    }
+
+    to {
+        transform: translate(-80px, -40px) scale(0.9);
+    }
 }
 
 .container {
@@ -22,13 +71,15 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px;
 }
 
 h1 {
-    font-size: 3rem;
-    margin-bottom: 30px;
-    background: linear-gradient(90deg, #ff00cc, #000);
+    font-size: 3.5rem;
+    margin-bottom: 50px;
+    letter-spacing: 5px;
+    text-shadow: 0 0 10px #ff00cc, 0 0 20px #ff00cc;
+    background: linear-gradient(90deg, #00ccff, #ff00cc);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -38,57 +89,92 @@ h1 {
 .boxes {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
 }
 
 .box {
     cursor: pointer;
-    background: linear-gradient(135deg, #3b0066, #8a2be2);
-    border-radius: 10px;
-    padding: 20px 30px;
-    backdrop-filter: blur(6px);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: rgba(43, 0, 75, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 20px 15px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    text-align: left;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    min-height: 80px;
+}
+
+.box i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #00ccff;
+    text-shadow: 0 0 5px #00ccff;
 }
 
 .box:hover {
-    transform: translateY(-10px);
-    background-color: linear-gradient(135deg, #ff00cc, #3333ff);
-    box-shadow: 0 0 15px #ff00cc;
+    transform: translateY(-5px);
+    background: rgba(60, 0, 100, 0.7);
+    box-shadow:
+        0 0 5px #ff00cc,
+        0 0 20px #ff00cc,
+        0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-/* Reponsive */
+span {
+    position: relative;
+    left: 14px;
+    bottom: -2px;
+}
 
-@media (max-width: 746px) {
-    body {
-        overflow: visible;
+/* --- Responsive --- */
+
+@media (max-width: 992px) {
+    .boxes {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .boxes {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
     }
 
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 576px) {
     .boxes {
         grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
 
+    .box {
+        padding: 15px 10px;
+        min-height: 70px;
+    }
+
+    /* IMPORTANT: Remove the fixed height on .container in your original file.
+       If you need to ensure the container is tall enough, use min-height: 100vh. */
     .container {
-        height: 248vh;
+        /* height: 248vh; <--- DELETE THIS LINE */
     }
 }
 
-@media (max-width: 480px) {
-    body {
-        overflow: visible;
-    }
-
+@media (max-width: 400px) {
     .boxes {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .container {
-        height: 488vh;
-    }
-}
-
-@media (max-width: 320px) {
     h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 }
