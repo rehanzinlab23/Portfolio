@@ -22,6 +22,49 @@ body {
      padding: 16px;
 }
 
+.search-box {
+     width: 100%;
+     max-width: 600px;
+     margin: 30px auto 10px auto;
+     position: relative;
+     display: flex;
+     align-items: center;
+     background: var(--input-bg);
+     border: 1px solid var(--input-border);
+     color: var(--text-color);
+}
+
+.search-box input:hover {
+     transform: scale(1.01);
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.search-box i {
+     position: absolute;
+     left: 20px;
+     color: #888;
+     font-size: 18px;
+     z-index: 9999;
+     cursor: pointer;
+}
+
+.search-box input {
+     width: 100%;
+     padding: 16px 20px 16px 50px;
+     border-radius: 50px;
+     border: 1px solid #ddd;
+     background: #fff;
+     font-size: 16px;
+     outline: none;
+     box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;
+     transition: all 0.3s ease;
+}
+
+.search-box input:focus {
+     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+     border-color: #000;
+}
+
 h1 {
      font-size: 40px;
      margin-top: 50px;
